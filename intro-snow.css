@@ -1,0 +1,220 @@
+/* ========================================
+   INTRO SCREEN (HEARTBEAT)
+   ======================================== */
+.intro-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 9999;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.8s ease, visibility 0.8s ease;
+}
+
+.heartbeat-container {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.heartbeat-line {
+    width: 100%;
+    height: 200px;
+    overflow: visible;
+}
+
+.ecg-line {
+    fill: none;
+    stroke: var(--accent-blue);
+    stroke-width: 3;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    filter: drop-shadow(0 0 8px var(--accent-blue));
+    opacity: 0;
+}
+
+/* Animations */
+/* 1. Flat Start */
+.flat-start {
+    opacity: 1;
+    stroke-dasharray: 150;
+    stroke-dashoffset: 150;
+    animation: drawLine 1s linear forwards;
+}
+
+/* 2. The Beat */
+.beat {
+    opacity: 1;
+    stroke-dasharray: 300;
+    stroke-dashoffset: 300;
+    animation: drawLine 0.5s linear forwards 1s, flashBeat 0.2s ease-out 1.2s;
+}
+
+/* 3. Flat End */
+.flat-end {
+    opacity: 1;
+    stroke-dasharray: 380;
+    stroke-dashoffset: 380;
+    animation: drawLine 1.5s linear forwards 1.5s;
+}
+
+@keyframes drawLine {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes flashBeat {
+    0% {
+        stroke: #fff;
+        filter: drop-shadow(0 0 20px #fff);
+        stroke-width: 5;
+    }
+
+    100% {
+        stroke: var(--accent-blue);
+        filter: drop-shadow(0 0 8px var(--accent-blue));
+        stroke-width: 3;
+    }
+}
+
+.intro-name {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    font-family: 'Outfit', sans-serif;
+    mix-blend-mode: lighten;
+    /* Blend with the line */
+}
+
+.name-part {
+    font-size: 3.5rem;
+    font-weight: 800;
+    color: #fff;
+    letter-spacing: 4px;
+    opacity: 0;
+    text-shadow: 0 0 20px var(--accent-blue);
+}
+
+/* Name Appear Animation (Sync with Beat) */
+.name-part:nth-child(1) {
+    animation: textGlitch 0.2s cubic-bezier(0.1, 0.9, 0.2, 1) forwards 1.2s;
+    /* Matches beat peak */
+}
+
+.name-part:nth-child(2) {
+    font-size: 2rem;
+    color: var(--text-secondary);
+    animation: fadeIn 0.5s ease forwards 1.4s;
+}
+
+@keyframes textGlitch {
+    0% {
+        opacity: 0;
+        transform: scale(1.5) skew(20deg);
+        filter: blur(10px);
+    }
+
+    50% {
+        opacity: 1;
+        transform: scale(0.9) skew(-10deg);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1) skew(0deg);
+        filter: blur(0);
+    }
+}
+
+/* Hide Intro when loaded */
+body.loaded .intro-screen {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+/* ========================================
+   SNOW EFFECT (Unchanged)
+   ======================================== */
+#snow-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    pointer-events: none;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.snowflake {
+    position: absolute;
+    top: -10px;
+    color: #fff;
+    user-select: none;
+    z-index: 0;
+    pointer-events: none;
+    animation-name: fall, sway;
+    animation-timing-function: linear, ease-in-out;
+    animation-iteration-count: infinite, infinite;
+}
+
+@keyframes fall {
+    0% {
+        top: -10%;
+    }
+
+    100% {
+        top: 110%;
+    }
+}
+
+@keyframes sway {
+    0% {
+        transform: translateX(0px);
+    }
+
+    50% {
+        transform: translateX(20px);
+    }
+
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+/* Mobile Adjustments */
+@media (max-width: 768px) {
+    .name-part {
+        font-size: 2.5rem;
+    }
+
+    .name-part:nth-child(2) {
+        font-size: 1.5rem;
+    }
+
+    .heartbeat-container {
+        transform: scale(0.8);
+    }
+}
