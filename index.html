@@ -1,0 +1,915 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Benbrika Abderhman - Trader, Social Media Manager, Web Developer, Brand Builder, E-Commerce Specialist. Results-driven digital professional focused on growth.">
+    <meta name="keywords"
+        content="Benbrika Abderhman, Trader, Web Developer, Social Media Manager, Brand Builder, E-Commerce">
+    <meta property="og:title" content="Benbrika Abderhman - Trader, Web Developer, Brand Builder">
+    <meta property="og:description"
+        content="A multi-disciplinary digital professional focused on trading, social media growth, web development, brand building, and e-commerce performance.">
+    <meta property="og:type" content="website">
+    <title>Benbrika Abderhman - Trader | Web Developer | Brand Builder</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/components.css">
+    <link rel="stylesheet" href="styles/intro-snow.css"> <!-- Added Intro/Snow Styles -->
+    <link rel="stylesheet" href="styles/animations.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+</head>
+
+<body>
+    <!-- Particles Background -->
+    <div id="particles-js"></div>
+    <!-- Snow Effect -->
+    <div id="snow-container"></div>
+
+    <!-- Intro Screen -->
+    <!-- Intro Screen -->
+    <div class="intro-screen" id="introScreen">
+        <div class="heartbeat-container">
+            <svg class="heartbeat-line" viewBox="0 0 600 200">
+                <!-- Flat line start -->
+                <polyline points="0,100 150,100" class="ecg-line flat-start" />
+                <!-- The Beat -->
+                <polyline points="150,100 160,100 170,80 180,120 190,40 200,160 210,100 220,100"
+                    class="ecg-line beat" />
+                <!-- Flat line continues -->
+                <polyline points="220,100 600,100" class="ecg-line flat-end" />
+            </svg>
+            <h1 class="intro-name">
+                <span class="name-part">BENBRIKA</span>
+                <span class="name-part">ABDERHMAN</span>
+            </h1>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="nav-wrapper">
+            <div class="nav-logo">
+                <a href="#top" class="logo-text">BENBRIKA.</a>
+            </div>
+            <div class="nav-links">
+                <a href="#top" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#work" class="nav-link">Work</a>
+                <a href="#contact" class="nav-link nav-contact-btn">Contact</a>
+            </div>
+            <div class="nav-social">
+                <a href="https://www.instagram.com/_benb__abdou_/" target="_blank" class="social-icon"
+                    aria-label="Instagram">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                    </svg>
+                </a>
+                <a href="https://x.com/BAbdou12345917" target="_blank" class="social-icon" aria-label="X Twitter">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                        fill="currentColor">
+                        <path
+                            d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                    </svg>
+                </a>
+            </div>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-content">
+            <a href="#top" class="mobile-link">Home</a>
+            <a href="#about" class="mobile-link">About</a>
+            <a href="#work" class="mobile-link">Work</a>
+            <a href="#contact" class="mobile-link">Contact</a>
+            <div class="mobile-social">
+                <a href="mailto:benbabdou49@gmail.com" class="social-icon">📧</a>
+                <a href="https://www.instagram.com/_benb__abdou_/" target="_blank" class="social-icon">📸</a>
+                <a href="https://t.me/full_trading_learn" target="_blank" class="social-icon">✈️</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero Section - Bento Grid Layout -->
+    <section class="section section-hero" id="top">
+        <div class="hero-bento-grid">
+            <!-- Main Hero Card -->
+            <div class="bento-card bento-main">
+                <div class="hero-title-wrapper">
+                    <h1 class="hero-title">
+                        <span class="title-line" data-animation="fade-up">Professional Trader.</span>
+                        <span class="title-line" data-animation="fade-up">Web Developer.</span>
+                        <span class="title-line" data-animation="fade-up">Brand Builder.</span>
+                        <span class="title-line accent" data-animation="fade-up">Creative.</span>
+                    </h1>
+                </div>
+                <a href="#contact" class="hero-cta-btn" data-animation="fade-up">
+                    <span>Let's Connect!</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M5 12h14M12 5l7 7-7 7" />
+                    </svg>
+                </a>
+            </div>
+
+            <!-- Profile Card -->
+            <div class="bento-card bento-profile">
+                <div class="profile-image">
+                    <div class="profile-placeholder">BA</div>
+                </div>
+                <div class="profile-info">
+                    <h3>Benbrika Abderhman</h3>
+                    <p>Digital Professional</p>
+                </div>
+            </div>
+
+            <!-- Stats Card 1 -->
+            <div class="bento-card bento-stats">
+                <div class="stat-icon">📊</div>
+                <div class="stat-content">
+                    <span class="stat-number">50+</span>
+                    <span class="stat-label">Projects</span>
+                </div>
+            </div>
+
+            <!-- Stats Card 2 -->
+            <div class="bento-card bento-stats">
+                <div class="stat-icon">🌍</div>
+                <div class="stat-content">
+                    <span class="stat-number">30+</span>
+                    <span class="stat-label">Clients</span>
+                </div>
+            </div>
+
+            <!-- Social Card - Telegram -->
+            <div class="bento-card bento-social bento-telegram">
+                <a href="https://t.me/full_trading_learn" target="_blank" class="social-card-link">
+                    <div class="social-card-header">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            fill="currentColor">
+                            <path
+                                d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z" />
+                        </svg>
+                        <span>Telegram</span>
+                    </div>
+                    <div class="social-card-body">
+                        <span class="social-username">@full_trading_learn</span>
+                        <span class="social-action">Follow</span>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Instagram Card -->
+            <div class="bento-card bento-social bento-instagram">
+                <a href="https://www.instagram.com/_benb__abdou_/" target="_blank" class="social-card-link">
+                    <div class="social-card-header">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                        </svg>
+                        <span>Instagram</span>
+                    </div>
+                    <div class="social-card-body">
+                        <span class="social-username">@_benb__abdou_</span>
+                        <span class="social-action">Follow</span>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Contact Card -->
+            <div class="bento-card bento-contact">
+                <a href="#contact" class="contact-card-link">
+                    <span>Message</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                        <polyline points="22,6 12,13 2,6"></polyline>
+                    </svg>
+                </a>
+            </div>
+
+            <!-- Services Card -->
+            <div class="bento-card bento-services">
+                <h3>Services</h3>
+                <div class="services-list">
+                    <span class="service-tag">Trading Education</span>
+                    <span class="service-tag">Web Development</span>
+                    <span class="service-tag">Social Media</span>
+                    <span class="service-tag">E-Commerce</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <div class="scroll-indicator">
+            <div class="scroll-mouse">
+                <div class="scroll-wheel"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Businesses Section -->
+    <section class="section section-businesses" id="businesses">
+        <div class="container">
+            <h2 class="section-title center" data-animation="fade-up">Awesome businesses I've worked with</h2>
+
+            <div class="businesses-wrapper">
+                <div class="business-details">
+                    <div class="business-detail-card active" data-business="trading">
+                        <div class="business-icon">📈</div>
+                        <h3>Trading & Analysis</h3>
+                        <p>Professional market analysis and trading education for aspiring traders.</p>
+                        <div class="business-tags">
+                            <span>Analysis</span>
+                            <span>Education</span>
+                            <span>Strategy</span>
+                        </div>
+                    </div>
+                    <div class="business-detail-card" data-business="ecommerce">
+                        <div class="business-icon">🛒</div>
+                        <h3>E-Commerce Solutions</h3>
+                        <p>Complete online store setup and optimization for maximum conversions.</p>
+                        <div class="business-tags">
+                            <span>Shopify</span>
+                            <span>WooCommerce</span>
+                            <span>Marketing</span>
+                        </div>
+                    </div>
+                    <div class="business-detail-card" data-business="social">
+                        <div class="business-icon">📱</div>
+                        <h3>Social Media Growth</h3>
+                        <p>Strategic social media management and content creation for brands.</p>
+                        <div class="business-tags">
+                            <span>Instagram</span>
+                            <span>TikTok</span>
+                            <span>Content</span>
+                        </div>
+                    </div>
+                    <div class="business-detail-card" data-business="web">
+                        <div class="business-icon">💻</div>
+                        <h3>Web Development</h3>
+                        <p>Modern, responsive websites tailored to your business needs.</p>
+                        <div class="business-tags">
+                            <span>HTML/CSS</span>
+                            <span>JavaScript</span>
+                            <span>WordPress</span>
+                        </div>
+                    </div>
+                    <div class="business-detail-card" data-business="brand">
+                        <div class="business-icon">🎯</div>
+                        <h3>Brand Identity</h3>
+                        <p>Complete brand strategy and visual identity design for businesses.</p>
+                        <div class="business-tags">
+                            <span>Logo Design</span>
+                            <span>Visual Identity</span>
+                            <span>Strategy</span>
+                        </div>
+                    </div>
+                    <div class="business-detail-card" data-business="consulting">
+                        <div class="business-icon">💼</div>
+                        <h3>Digital Consulting</h3>
+                        <p>Expert advice on digital transformation and business growth strategies.</p>
+                        <div class="business-tags">
+                            <span>Strategy</span>
+                            <span>Growth</span>
+                            <span>Optimization</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="businesses-grid">
+                    <div class="business-logo active" data-business="trading">
+                        <div class="logo-icon">📈</div>
+                        <span>Trading</span>
+                    </div>
+                    <div class="business-logo" data-business="ecommerce">
+                        <div class="logo-icon">🛒</div>
+                        <span>E-Commerce</span>
+                    </div>
+                    <div class="business-logo" data-business="social">
+                        <div class="logo-icon">📱</div>
+                        <span>Social</span>
+                    </div>
+                    <div class="business-logo" data-business="web">
+                        <div class="logo-icon">💻</div>
+                        <span>Web Dev</span>
+                    </div>
+                    <div class="business-logo" data-business="brand">
+                        <div class="logo-icon">🎯</div>
+                        <span>Branding</span>
+                    </div>
+                    <div class="business-logo" data-business="consulting">
+                        <div class="logo-icon">💼</div>
+                        <span>Consulting</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Software Section -->
+    <section class="section section-software" id="software">
+        <div class="container">
+            <div class="software-wrapper">
+                <div class="software-center">
+                    <h2 class="software-title" data-animation="fade-up">core software i use</h2>
+                    <p class="software-subtitle">Tools that power my work</p>
+                </div>
+
+                <div class="software-icons">
+                    <!-- Web Development -->
+                    <div class="software-icon floating" style="--delay: 0s; --offset-x: -150px; --offset-y: -220px;">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+                            alt="HTML5">
+                        <span>HTML5</span>
+                    </div>
+                    <div class="software-icon floating" style="--delay: 0.2s; --offset-x: 150px; --offset-y: -220px;">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3">
+                        <span>CSS3</span>
+                    </div>
+                    <div class="software-icon floating" style="--delay: 0.4s; --offset-x: -250px; --offset-y: -120px;">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                            alt="JavaScript">
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="software-icon floating" style="--delay: 0.6s; --offset-x: 250px; --offset-y: -120px;">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+                            alt="React">
+                        <span>React</span>
+                    </div>
+                    <div class="software-icon floating" style="--delay: 2.8s; --offset-x: -320px; --offset-y: 0px;">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-original.svg"
+                            alt="WordPress">
+                        <span>WordPress</span>
+                    </div>
+                    <div class="software-icon floating" style="--delay: 3.0s; --offset-x: 320px; --offset-y: 0px;">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg"
+                            alt="VS Code">
+                        <span>VS Code</span>
+                    </div>
+
+                    <!-- Design -->
+                    <div class="software-icon floating" style="--delay: 3.2s; --offset-x: -100px; --offset-y: 350px;">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg"
+                            alt="Figma">
+                        <span>Figma</span>
+                    </div>
+                    <div class="software-icon floating" style="--delay: 3.4s; --offset-x: 100px; --offset-y: 350px;">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-original.svg"
+                            alt="Photoshop">
+                        <span>Photoshop</span>
+                    </div>
+
+                    <!-- Trading Tools -->
+                    <div class="software-icon floating" style="--delay: 0.8s; --offset-x: 0px; --offset-y: -280px;">
+                        <img src="https://cdn.simpleicons.org/tradingview/white" alt="TradingView">
+                        <span>TradingView</span>
+                    </div>
+                    <div class="software-icon floating" style="--delay: 1.0s; --offset-x: -200px; --offset-y: 200px;">
+                        <span style="font-size: 32px">📉</span>
+                        <span>MetaTrader 5</span>
+                    </div>
+                    <div class="software-icon floating" style="--delay: 1.2s; --offset-x: 200px; --offset-y: 200px;">
+                        <span style="font-size: 32px;">🗺️</span>
+                        <span>Bookmap</span>
+                    </div>
+
+                    <!-- E-commerce & Social -->
+                    <div class="software-icon floating" style="--delay: 1.4s; --offset-x: 350px; --offset-y: -200px;">
+                        <img src="https://cdn.simpleicons.org/shopify/white" alt="Shopify">
+                        <span>Shopify</span>
+                    </div>
+                    <div class="software-icon floating" style="--delay: 1.6s; --offset-x: -350px; --offset-y: -200px;">
+                        <img src="https://cdn.simpleicons.org/meta/white" alt="Meta">
+                        <span>Meta</span>
+                    </div>
+                    <div class="software-icon floating" style="--delay: 1.8s; --offset-x: 380px; --offset-y: 100px;">
+                        <img src="https://cdn.simpleicons.org/facebook/white" alt="Facebook">
+                        <span>Facebook</span>
+                    </div>
+                    <div class="software-icon floating" style="--delay: 2.0s; --offset-x: -380px; --offset-y: 100px;">
+                        <img src="https://cdn.simpleicons.org/instagram/white" alt="Instagram">
+                        <span>Instagram</span>
+                    </div>
+                    <div class="software-icon floating" style="--delay: 2.2s; --offset-x: 0px; --offset-y: 280px;">
+                        <img src="https://cdn.simpleicons.org/tiktok/white" alt="TikTok">
+                        <span>TikTok</span>
+                    </div>
+
+                    <!-- Success Symbols -->
+                    <div class="software-icon floating" style="--delay: 2.4s; --offset-x: -120px; --offset-y: -100px;">
+                        <span style="font-size: 28px;">🚀</span>
+                        <span>Growth</span>
+                    </div>
+                    <div class="software-icon floating" style="--delay: 2.6s; --offset-x: 120px; --offset-y: -100px;">
+                        <span style="font-size: 28px;">💰</span>
+                        <span>Profit</span>
+                    </div>
+                    <div class="software-icon floating" style="--delay: 3.6s; --offset-x: -50px; --offset-y: 150px;">
+                        <span style="font-size: 28px;">🏆</span>
+                        <span>Success</span>
+                    </div>
+                    <div class="software-icon floating" style="--delay: 3.8s; --offset-x: 50px; --offset-y: 150px;">
+                        <span style="font-size: 28px;">📈</span>
+                        <span>Analysis</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="section section-testimonials" id="testimonials">
+        <div class="container">
+            <h2 class="section-title center" data-animation="fade-up">Testimonials of happy clients.</h2>
+
+            <div class="testimonials-wrapper">
+                <!-- Floating Cursors -->
+                <div class="testimonial-cursors">
+                    <div class="cursor-tag" style="--pos-x: 10%; --pos-y: 20%;" data-testimonial="0">Ahmed</div>
+                    <div class="cursor-tag" style="--pos-x: 85%; --pos-y: 30%;" data-testimonial="1">Mohamed</div>
+                    <div class="cursor-tag" style="--pos-x: 15%; --pos-y: 70%;" data-testimonial="2">Youssef</div>
+                </div>
+
+                <!-- Main Testimonial Card -->
+                <div class="testimonial-main-card">
+                    <div class="testimonial-stars">
+                        <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span>
+                    </div>
+                    <blockquote class="testimonial-quote">
+                        "Benbrika transformed our online presence completely. Professional, creative, and always
+                        delivers on time. Highly recommended!"
+                    </blockquote>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">A</div>
+                        <div class="author-info">
+                            <h4>Ahmed K.</h4>
+                            <span>Business Owner</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Navigation Arrows -->
+                <div class="testimonial-nav">
+                    <button class="nav-arrow prev" aria-label="Previous testimonial">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M15 18l-6-6 6-6" />
+                        </svg>
+                    </button>
+                    <button class="nav-arrow next" aria-label="Next testimonial">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M9 18l6-6-6-6" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <div class="testimonials-cta">
+                <a href="#contact" class="btn btn-primary">
+                    <span>Start your project</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M5 12h14M12 5l7 7-7 7" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="section section-stats">
+        <div class="container">
+            <h2 class="section-title center" data-animation="fade-up">Helping good people, do amazing things!</h2>
+            <div class="stats-grid" data-animation="fade-up">
+                <div class="stat-card">
+                    <div class="stat-number">50+</div>
+                    <div class="stat-label">Projects Completed</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">30+</div>
+                    <div class="stat-label">Happy Clients</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">3+</div>
+                    <div class="stat-label">Years Experience</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">100%</div>
+                    <div class="stat-label">Dedication</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work Section -->
+    <section class="section section-work" id="work">
+        <div class="container">
+            <h2 class="section-title center" data-animation="fade-up">.Recent work.</h2>
+            <p class="section-subtitle center" data-animation="fade-up">A collection of my most recent projects.</p>
+
+            <!-- Project Selector -->
+            <div class="project-selector" data-animation="fade-up">
+                <h3>Pick a project:</h3>
+                <div class="project-icons">
+                    <button class="project-icon active" data-project="1">
+                        <span>🌐</span>
+                    </button>
+                    <button class="project-icon" data-project="2">
+                        <span>📊</span>
+                    </button>
+                    <button class="project-icon" data-project="3">
+                        <span>🛒</span>
+                    </button>
+                    <button class="project-icon" data-project="4">
+                        <span>📱</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Project Display -->
+            <div class="project-display">
+                <div class="project-details active" data-project="1">
+                    <div class="project-colors">
+                        <div class="color-bar" style="background: #4A90D9;"></div>
+                        <div class="color-bar" style="background: #2E5D8C;"></div>
+                        <div class="color-bar" style="background: #1E2324;"></div>
+                        <div class="color-bar" style="background: #F2F2F2;"></div>
+                    </div>
+                    <div class="project-mockup">
+                        <div class="mockup-browser">
+                            <div class="browser-bar">
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                            </div>
+                            <div class="browser-content">
+                                <div class="mockup-placeholder gradient-1">
+                                    <span>🌐</span>
+                                    <h4>Business Website</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Business Website</h3>
+                        <p>Modern responsive website for local business</p>
+                        <a href="#" class="project-link">
+                            <span>Check live site</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M7 17L17 7M17 7H7M17 7v10" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-details" data-project="2">
+                    <div class="project-colors">
+                        <div class="color-bar" style="background: #26A69A;"></div>
+                        <div class="color-bar" style="background: #1B7D6F;"></div>
+                        <div class="color-bar" style="background: #1E2324;"></div>
+                        <div class="color-bar" style="background: #F2F2F2;"></div>
+                    </div>
+                    <div class="project-mockup">
+                        <div class="mockup-browser">
+                            <div class="browser-bar">
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                            </div>
+                            <div class="browser-content">
+                                <div class="mockup-placeholder gradient-4">
+                                    <span>📊</span>
+                                    <h4>Trading Analysis</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Trading Analysis Platform</h3>
+                        <p>Market analysis & trading education</p>
+                        <a href="https://t.me/full_trading_learn" target="_blank" class="project-link">
+                            <span>Learn More</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M7 17L17 7M17 7H7M17 7v10" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-details" data-project="3">
+                    <div class="project-colors">
+                        <div class="color-bar" style="background: #FF9900;"></div>
+                        <div class="color-bar" style="background: #E67E00;"></div>
+                        <div class="color-bar" style="background: #1E2324;"></div>
+                        <div class="color-bar" style="background: #F2F2F2;"></div>
+                    </div>
+                    <div class="project-mockup">
+                        <div class="mockup-browser">
+                            <div class="browser-bar">
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                            </div>
+                            <div class="browser-content">
+                                <div class="mockup-placeholder gradient-3">
+                                    <span>🛒</span>
+                                    <h4>E-Commerce Store</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>E-Commerce Store</h3>
+                        <p>Full e-commerce solution with payment integration</p>
+                        <a href="#" class="project-link">
+                            <span>View Store</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M7 17L17 7M17 7H7M17 7v10" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-details" data-project="4">
+                    <div class="project-colors">
+                        <div class="color-bar" style="background: #E1306C;"></div>
+                        <div class="color-bar" style="background: #833AB4;"></div>
+                        <div class="color-bar" style="background: #1E2324;"></div>
+                        <div class="color-bar" style="background: #F2F2F2;"></div>
+                    </div>
+                    <div class="project-mockup">
+                        <div class="mockup-browser">
+                            <div class="browser-bar">
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                            </div>
+                            <div class="browser-content">
+                                <div class="mockup-placeholder gradient-2">
+                                    <span>📱</span>
+                                    <h4>Social Media Campaign</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Social Media Campaign</h3>
+                        <p>Instagram growth strategy & content creation</p>
+                        <a href="#" class="project-link">
+                            <span>View Campaign</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M7 17L17 7M17 7H7M17 7v10" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section section-about" id="about">
+        <div class="container">
+            <!-- Personal Ticker -->
+            <div class="personal-ticker">
+                <div class="ticker-content">
+                    <span>TRADER</span>
+                    <span class="ticker-dot">∞</span>
+                    <span>DEVELOPER</span>
+                    <span class="ticker-dot">∞</span>
+                    <span>CREATOR</span>
+                    <span class="ticker-dot">∞</span>
+                    <span>ENTREPRENEUR</span>
+                    <span class="ticker-dot">∞</span>
+                    <span>INNOVATOR</span>
+                    <span class="ticker-dot">∞</span>
+                    <span>TRADER</span>
+                    <span class="ticker-dot">∞</span>
+                    <span>DEVELOPER</span>
+                    <span class="ticker-dot">∞</span>
+                    <span>CREATOR</span>
+                    <span class="ticker-dot">∞</span>
+                    <span>ENTREPRENEUR</span>
+                    <span class="ticker-dot">∞</span>
+                    <span>INNOVATOR</span>
+                    <span class="ticker-dot">∞</span>
+                </div>
+            </div>
+
+            <h2 class="section-title center" data-animation="fade-up">About <span class="highlight">BENBRIKA</span></h2>
+
+            <div class="about-grid">
+                <div class="about-content" data-animation="fade-right">
+                    <div class="about-text">
+                        <p>I'm a multi-disciplinary digital professional with expertise spanning trading, social media
+                            management, web development, brand building, and e-commerce optimization.</p>
+                        <p>My journey in the digital space combines analytical thinking with creative execution. Whether
+                            it's developing trading strategies, building engaging social media campaigns, or crafting
+                            websites that convert, I bring a results-driven approach to every project.</p>
+                        <p>I believe in the power of digital transformation and help businesses and individuals
+                            establish strong online presences that drive real growth. From startups to established
+                            brands, I work with clients who share a vision for excellence.</p>
+                    </div>
+                </div>
+
+                <div class="about-cards" data-animation="fade-left">
+                    <!-- Education Card -->
+                    <div class="about-card education-card">
+                        <h4>I've studied, professionally.</h4>
+                        <div class="education-items">
+                            <div class="education-item">
+                                <div class="edu-icon">🎓</div>
+                                <div class="edu-info">
+                                    <span class="edu-degree">Trading & Market Analysis</span>
+                                    <span class="edu-school">Self-taught Professional</span>
+                                </div>
+                            </div>
+                            <div class="education-item">
+                                <div class="edu-icon">💻</div>
+                                <div class="edu-info">
+                                    <span class="edu-degree">Web Development</span>
+                                    <span class="edu-school">Modern Technologies</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Skills Card -->
+                    <div class="about-card skills-card">
+                        <h4>Skills Overview</h4>
+                        <div class="skills-bars">
+                            <div class="skill-bar">
+                                <span class="skill-name">Trading Analysis</span>
+                                <div class="bar-bg">
+                                    <div class="bar-fill" style="--width: 95%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill-bar">
+                                <span class="skill-name">Web Development</span>
+                                <div class="bar-bg">
+                                    <div class="bar-fill" style="--width: 90%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill-bar">
+                                <span class="skill-name">Social Media</span>
+                                <div class="bar-bg">
+                                    <div class="bar-fill" style="--width: 88%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill-bar">
+                                <span class="skill-name">E-Commerce</span>
+                                <div class="bar-bg">
+                                    <div class="bar-fill" style="--width: 85%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section section-contact" id="contact">
+        <div class="container">
+            <div class="contact-wrapper">
+                <div class="contact-info" data-animation="fade-right">
+                    <h2 class="section-title">Let's work together!</h2>
+                    <p class="contact-quote">"Good design is expensive, bad design costs a fortune and your time"</p>
+                    <p>Get in touch and let me help you achieve your goals</p>
+
+                    <div class="contact-details">
+                        <a href="mailto:benbabdou49@gmail.com" class="contact-item">
+                            <span class="contact-icon">📧</span>
+                            <span>benbabdou49@gmail.com</span>
+                        </a>
+                        <a href="tel:+213540771573" class="contact-item">
+                            <span class="contact-icon">📱</span>
+                            <span>+213 540 77 15 73</span>
+                        </a>
+                        <a href="https://wa.me/213540771573" target="_blank" class="contact-item">
+                            <span class="contact-icon">💬</span>
+                            <span>WhatsApp</span>
+                        </a>
+                    </div>
+
+                    <div class="contact-social">
+                        <a href="https://www.instagram.com/_benb__abdou_/" target="_blank" class="social-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                            </svg>
+                        </a>
+                        <a href="https://t.me/full_trading_learn" target="_blank" class="social-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="currentColor">
+                                <path
+                                    d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z" />
+                            </svg>
+                        </a>
+                        <a href="https://x.com/BAbdou12345917" target="_blank" class="social-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"
+                                fill="currentColor">
+                                <path
+                                    d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="contact-form-wrapper" data-animation="fade-left">
+                    <form class="contact-form" id="contactForm" action="https://formsubmit.co/benbabdou49@gmail.com" method="POST">
+                        <input type="hidden" name="_subject" value="New Contact from Portfolio Website">
+                        <input type="hidden" name="_template" value="table">
+                        <input type="hidden" name="_captcha" value="false">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required placeholder="Your name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required placeholder="your@email.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required
+                                placeholder="Tell me about your project..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">
+                            <span>Let's make magic</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <line x1="22" y1="2" x2="11" y2="13"></line>
+                                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-cta" data-animation="fade-up">
+                <h2>Ready to make pixels dance together?</h2>
+                <a href="#contact" class="btn btn-primary btn-large">
+                    <span>Contact me</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M5 12h14M12 5l7 7-7 7" />
+                    </svg>
+                </a>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Benbrika Abderhman. All rights reserved.</p>
+                <a href="#top" class="back-to-top">
+                    <span>You definitely missed something</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 19V5M5 12l7-7 7 7" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+
+</body>
+
+</html>
